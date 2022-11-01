@@ -1,6 +1,7 @@
 import '../scss/style.scss';
 
 import fetchData from './modules/fetchData';
+import isChecked from './modules/checkbox';
 
 window.addEventListener('DOMContentLoaded', function () {
   const root = document.getElementById('root');

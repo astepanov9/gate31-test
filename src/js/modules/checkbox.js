@@ -5,7 +5,11 @@ const isChecked = () => {
   for (let i = 0, length = item.length; i < length; i++) {
     for (let i = 0, length = check.length; i < length; i++) {
       check[i].addEventListener('click', function () {
-        item[i].classList.toggle('active');
+        if (check[i].checked) {
+          item[i].classList.add('active');
+        } else {
+          item[i].classList.remove('active');
+        }
       });
     }
   }
